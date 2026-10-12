@@ -1,0 +1,84 @@
+{
+  "settings": {
+    "data_root": "data",
+    "emulators": {
+      "wine": "tools/bin/wine.cmd",
+      "dosbox": "dosbox-x"
+    },
+    "wine": {
+      "prefix": "",
+      "arch": ""
+    },
+    "dosbox": {
+      "extra_args": []
+    }
+  },
+  "apps": {
+    "submarine_titans": {
+      "name": "Submarine Titans",
+      "type": "wine",
+      "category": "games",
+      "command": "SubTitan.exe",
+      "args": "",
+      "path_relative_to_data": "games/submarine_titans",
+      "description": "Real-time strategy game (Win95)"
+    },
+    "ace_ventura": {
+      "name": "Ace Ventura: When Nature Calls",
+      "type": "wine",
+      "category": "games",
+      "command": "ACEVENT.EXE",
+      "args": "",
+      "path_relative_to_data": "games/ace_ventura",
+      "description": "Adventure game (Win95)"
+    },
+    "encarta_2000": {
+      "name": "Microsoft Encarta 2000",
+      "type": "wine",
+      "category": "apps",
+      "command": "Encarta.exe",
+      "args": "",
+      "path_relative_to_data": "apps/encarta_2000",
+      "description": "Interactive encyclopedia (Win98)"
+    },
+    "encarta_2005": {
+      "name": "Microsoft Encarta 2005",
+      "type": "wine",
+      "category": "apps",
+      "command": "program/Biblioteca de Consulta Encarta 2005/Encarta.exe",
+      "args": "",
+      "path_relative_to_data": "apps/encarta_2005",
+      "working_dir": "apps/encarta_2005/program/Biblioteca de Consulta Encarta 2005",
+      "description": "Reference encyclopedia, 4-CD set (WinXP) - run the setup entry once first"
+    },
+    "encarta_2005_setup": {
+      "name": "Encarta 2005 (setup)",
+      "type": "wine",
+      "category": "apps",
+      "command": "install.cmd",
+      "args": "",
+      "path_relative_to_data": "apps/encarta_2005",
+      "description": "Installs the 4 CDs into data/apps/encarta_2005/program (elevation prompt, ~2 GB)"
+    },
+    "doom_dos": {
+      "name": "Doom (DOS)",
+      "type": "dosbox",
+      "category": "games",
+      "path_relative_to_data": "games/doom",
+      "mount": "C",
+      "command": "DOOM.EXE",
+      "args": "-iwad DOOM1.WAD",
+      "config": "dosbox.conf",
+      "description": "Classic FPS (DOS)"
+    },
+    "wolf3d_dos": {
+      "name": "Wolfenstein 3D (DOS)",
+      "type": "dosbox",
+      "category": "games",
+      "path_relative_to_data": "games/wolf3d",
+      "mount": "C",
+      "command": "WOLF3D.EXE",
+      "description": "The original first-person shooter (DOS)"
+    }
+  }
+}

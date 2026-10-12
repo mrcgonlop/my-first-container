@@ -1,0 +1,24 @@
+# Normalise line endings. Shell scripts, Python and JSON stay LF so the
+# launchers work on Linux/WSL; Windows batch and PowerShell files are CRLF.
+* text=auto eol=lf
+
+*.sh     text eol=lf
+*.bash   text eol=lf
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+
+*.py     text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+*.html   text eol=lf
+*.conf   text eol=lf
+
+# Media and disk images are binary
+*.iso    binary
+*.img    binary
+*.bin    binary
+*.cue    binary
+*.qcow2  binary
+

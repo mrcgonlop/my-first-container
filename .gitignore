@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Time Capsule -- git ignores
+# ---------------------------------------------------------------------------
+
+# Python noise
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Capsule content: the games, apps and disc images stay on your machine.
+# Only the structure and this repository's own files are tracked.
+data/*
+!data/README.md
+
+# ...but keep the placeholders that define the expected layout
+!data/games
+!data/apps
+data/games/*
+data/apps/*
+!data/games/.gitkeep
+!data/apps/.gitkeep
+
+# Media / disc images anywhere in the tree
+*.iso
+*.ISO
+*.img
+*.bin
+*.cue
+*.mdf
+*.nrg
+*.chd
+*.qcow2
+*.vhd
+*.vmdk
+*.vdi
+
+# Wine bottles
+wineprefix/
+*.wineprefix/
+
+# Emulators installed inside the repository (portable ZIPs, the wine shim)
+tools/
+
+# Local, machine specific overrides of the app index
+manifest.local.json
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+

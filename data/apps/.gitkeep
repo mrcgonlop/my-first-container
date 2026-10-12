@@ -1,0 +1,2 @@
+# Keeps data/apps/ in git. Drop each application in its own sub-folder
+# (e.g. data/apps/encarta_2000/) and describe it in the top-level manifest.json.

@@ -1,0 +1,2 @@
+# Keeps data/games/ in git. Drop each DOS/Windows game in its own sub-folder
+# (e.g. data/games/doom/) and describe it in the top-level manifest.json.
